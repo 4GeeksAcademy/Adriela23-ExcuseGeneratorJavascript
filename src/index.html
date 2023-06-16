@@ -4,25 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Rigo with Vanilla.js</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
+
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="container-fluid text-center bg-info-subtle text-emphasis-info">
+      <h1 class="mt-5">OMG! You will not believe me but...</h1>
+      <!-- el id vincula este h1 con el doc JS -->
+      <h1 id="excuse" class="mt-5">
+        A racoon stole my weekly report in the middle of the night
+      </h1>
+
+      <!-- boton para una nueva excusa -->
+      <div>
+        <button id="btnNewExcuse" type="button" class="btn btn-outline-warning">
+          I need an excuse, please
+        </button>
       </div>
     </div>
   </body>
