@@ -2,17 +2,17 @@
 import "bootstrap";
 import "./style.css";
 
-//Esta es la primera funcion que ejecuta el navegador despues de ejecutar el HTML
+//Es lo primero que ejecuta el navegador despues del HTML
 window.onload = () => {
-  //Esto hace que el boton del HTML responda a un click
+  //el boton en el HTML responde a un click
   document.querySelector("#btnNewExcuse");
   addEventListener("click", () => {
-    //Esto pone la excusa de forma aleatoria en el DOM, cada vez que se refresca la pagina
+    //pone la excusa aleatoriamente en el DOM
     document.querySelector("#excuse").innerHTML = newExcuse();
   });
 };
 
-//Esta funcion genera excusas concatenando un elementto de cada arreglo
+//funcion que genera excusas
 let newExcuse = () => {
   //arreglo que define el quien de la oracion
   let who = [
@@ -45,6 +45,6 @@ let newExcuse = () => {
   let whatIndex = Math.floor(Math.random() * what.length);
   let whenIndex = Math.floor(Math.random() * when.length);
 
-  //aqui la funcion devuelve la oracion concatenada
+  //devuelve la oracion concatenada
   return who[whoIndex] + " " + what[whatIndex] + " " + when[whenIndex];
 };
